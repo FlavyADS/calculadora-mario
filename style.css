@@ -1,0 +1,78 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #FEE593;
+    -webkit-font-smoothing: antialiased;
+    max-width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    width: 0.5rem;
+    position: absolute;
+}
+.calculadora {
+    width: 270px;
+    background-color: #0B61E9;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+.display {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    background-color: white;
+    margin: 5px;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: 'Nova Square', cursive;
+    text-align: right;
+    padding: 1rem;
+    border-radius: 4px;
+}
+#first-value-display{
+    color: gray ;
+    font-size: 18px;
+}
+
+button {
+    cursor: pointer;
+    margin: 3px;
+    padding: 0.8rem;
+    background-color: #F11604;
+    border-radius: 8px;
+    color: white;
+    font-size: 0.97rem;
+    //font-weight: bold;
+    font-family: 'Nova Square', cursive;
+}
+
+.row {
+    width: 100%
+}
+
+.teclas {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 5px;
+}
+
+.equal {
+    grid-row-start: 2;
+    grid-row-end: 6;
+    grid-column-start: 4;
+    grid-column-end: 4;
+    background-color:#D9BB0F;
+    font-weight: bold;
+    font-size: 1.4rem;
+    font-family: 'Nova Square', cursive;
+}
